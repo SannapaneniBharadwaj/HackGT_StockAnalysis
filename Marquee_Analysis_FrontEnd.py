@@ -199,13 +199,13 @@ app.layout = html.Div([
                                 })
 
 
-                        ]),
-                    ])
-                ])
+                        ],className='container', style={'maxWidth': '1000px'}),
+                    ],className='container', style={'maxWidth': '1000px'})
+                ], style={'maxWidth': '1500px','font': 'Times New Roman'})
                 
-            ])
+            ], style={'maxWidth': '1500px','font': 'Times New Roman'})
             
-    ], style={'font': 'Times New Roman'})
+    ], style={'maxWidth': '1500px','font': 'Times New Roman'})
 
 @app.callback(Output('my-graph1', 'figure'), [Input('my-dropdown', 'value')])
 def update_graph(selected_dropdown_value):
